@@ -1,0 +1,25 @@
+.requests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.request {
+    width: 80%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px 20px;
+}
+
+.request button {
+    width: 60%;
+}
+
+.input-get {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 0;
+    width: 90%;
+    text-align: center;
+}
