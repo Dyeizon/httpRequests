@@ -4,7 +4,7 @@ botaoGET.addEventListener("click", getHTTP);
 function getHTTP() {
     var input = document.querySelector("#inputGET")
 
-    fetch("https://api.quotable.io/quotes/random", {method: "GET"})
+    fetch("https://api.breakingbadquotes.xyz/v1/quotes", {method: "GET"})
   .then((response) => {
     console.log(response)
 
@@ -12,7 +12,7 @@ function getHTTP() {
 })
   .then((json) => {
     console.clear()
-    input.value = json[0]['content']
+    input.value = json[0]["quote"]
     console.log(json)
   });
 }
@@ -21,7 +21,7 @@ var botao200 = document.querySelector("#botao200")
 botao200.addEventListener("click", status200)
 
 function status200() {
-  fetch("https://api.quotable.io/quotes/random", {method: "GET"})
+  fetch("https://api.breakingbadquotes.xyz/v1/quotes", {method: "GET"})
   .then((response) => {
     console.clear()
     console.log("Resposta do código 200")
@@ -45,7 +45,7 @@ var botao404 = document.querySelector("#botao404")
 botao404.addEventListener("click", status404)
 
 function status404() {
-  fetch("https://api.quotable.io/quotes/random/lerolero", {method: "GET"})
+  fetch("https://api.breakingbadquotes.xyz/v1/lerolero", {method: "GET"})
   .then((response) => {
     console.clear()
     console.log("Resposta do código 404")
